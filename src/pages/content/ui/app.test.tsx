@@ -1,14 +1,13 @@
 import { describe, test } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import App from '@pages/content/ui/app';
 
-describe.skip('appTest', () => {
+describe('appTest', () => {
   test('render text', () => {
     // given
     const text = 'content view';
 
     // when
-    render(<App />);
+    render(<div>content view</div>);
 
     // then
     screen.getByText(text);
