@@ -56,7 +56,6 @@ export default defineConfig({
         contentUI: resolve(pagesDir, 'content', 'ui', 'index.ts'),
         background: resolve(pagesDir, 'background', 'index.ts'),
         contentStyle: resolve(pagesDir, 'content', 'style.scss'),
-        newtab: resolve(pagesDir, 'newtab', 'index.html'),
         options: resolve(pagesDir, 'options', 'index.html'),
         sidepanel: resolve(pagesDir, 'sidepanel', 'index.html'),
       },
