@@ -9,4 +9,10 @@ reloadOnUpdate('pages/background');
  */
 reloadOnUpdate('pages/content/style.scss');
 
-console.log('background loaded');
+enum MessageType {
+  TOGGLE_POPUP = 'toggle-popup',
+}
+
+chrome.action.onClicked.addListener(async tab => {
+  chrome.tabs.sendMessage(tab.id, { type: MessageType.TOGGLE_POPUP });
+});
