@@ -34,7 +34,7 @@ export default function Dashboard() {
   };
 
   return (
-    <Box position={'fixed'} top={top ?? 0} left={left ?? 0}>
+    <Box position={'fixed'} top={0} left={0}>
       {isOpen && (
         <DraggableBox defaultPosition={{ x: left ?? 0, y: top ?? 0 }} onStop={handleOnStop}>
           <Box bg={theme === 'light' ? 'whitesmoke' : '#222'} color={theme === 'light' ? '#222' : 'white'}>
