@@ -25,8 +25,7 @@ const manifest = {
     type: 'module',
   },
   action: {
-    default_popup: 'src/pages/popup/index.html',
-    default_icon: 'icon-34.png',
+    default_title: 'Click to show a modal',
   },
   chrome_url_overrides: {
     newtab: 'src/pages/newtab/index.html',
